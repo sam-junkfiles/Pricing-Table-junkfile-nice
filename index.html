@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>   
+      body {
+        font-family: "Roboto Condensed", sans-serif;
+        color: #fff;
+      }
+
+      .pricing-plan {
+        text-align: center;
+        flex: 1 1 400px;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin: 7px;
+        border-radius: 40px;
+        box-shadow: 0px 0px 10px rgb(75, 73, 73);
+      }
+
+      .pricing-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        gap: 80px;
+        margin: 100px;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      #one {
+        background: linear-gradient(50deg, #BAE7EF, #0EC8E9);
+        padding-top: 45px;
+        padding-bottom: 45px;
+      }
+
+      #two {
+        background: linear-gradient(50deg, #DDE712, #08D864);
+      }
+
+      #three {
+        background: linear-gradient(50deg, #FC07F1, #7E07FC);
+        padding-top: 45px;
+        padding-bottom: 45px;
+      }
+
+      .plan-title {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 17px;
+      }
+
+      .plan-price {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+
+      .plan-features {
+        font-size: 20px;
+        text-align: left;
+        margin-left: 22px;
+      }
+
+      button {
+        background-color: #fff;
+        width: 110px;
+        height: 34px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+      }
+
+      button:hover {
+        background-color: transparent;
+        color: #fff;
+      }
+
+      .fea1 {
+        margin-bottom: 7px;
+      }
+
+      .fea2 {
+        margin-bottom: 7px;
+      }
+
+      .fea312 {
+        margin-bottom: 42px;
+      }
+
+      img {
+        align-content: center;
+        margin-right: 5px;
+      }
+
+      
+      @media (max-width: 1250px) {
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan" id="one">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li class="fea1"><img src="./Assets/Storage icon.png" height="17px"/>  10GB Storage</li>
+          <li class="fea2"><img src="./Assets/user (1).png" height="19px"/>  1 User</li>
+          <li class="fea312"><img src="./Assets/Cancel icon.png" height="17px"/>  No Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan" id="two">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li class="fea1"><img src="./Assets/Storage icon.png" height="17px"/>  50GB Storage</li>
+          <li class="fea2"><img src="./Assets/group of users.png" height="23px"/>  5 Users</li>
+          <li class="fea3"><img src="./Assets/check-mark.png"/ height="20px">  Phone and Email<br/>Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan" id="three">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li class="fea1"><img src="./Assets/Storage icon.png" height="17px"/> 100GB Storage</li>
+          <li class="fea2"><img src="./Assets/last panel users.png" height="23px" /> 10 Users</li>
+          <li class="fea312"><img src="./Assets/check-mark.png" height="20px" /> 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>
